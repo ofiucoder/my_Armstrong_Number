@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class View {
 
-    private Scanner  scanner;
+    private Scanner scanner;
 
-    public View(){
+    public View() {
         this.scanner = new Scanner(System.in);
     }
-    public int index(){
+
+    public int index() {
         System.out.println("Ingrese un numero:  ");
         return scanner.nextInt();
     }
-} 
+    
+}
