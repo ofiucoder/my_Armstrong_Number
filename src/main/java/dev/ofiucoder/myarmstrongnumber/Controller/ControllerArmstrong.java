@@ -2,7 +2,8 @@ package dev.ofiucoder.myarmstrongnumber.Controller;
 
 public class ControllerArmstrong {
 
-    public static String validaArmstrongNumber(int numb) {
+
+    public static void validaArmstrongNumber(int numb) {
 
         int copyOfNumb = numb;
         int noOfDigits = String.valueOf(numb).length();
@@ -19,16 +20,14 @@ public class ControllerArmstrong {
             sum = sum + lastDigitToThePowerOfNumberOfDigits;
             copyOfNumb = copyOfNumb / 10;
         }
-        
-        if (sum == numb)
-        {
-            return (numb+" is an armstrong number");
-        }
-        else
-        {
-            return (numb+" is not an armstrong number");
-        }
-    }
 
+        if (sum == numb) {
+            System.out.println( numb + " is an armstrong number");
+        } else {
+            System.out.println( numb + " is not an armstrong number");
+        }
+
+
+    }
 
 }
