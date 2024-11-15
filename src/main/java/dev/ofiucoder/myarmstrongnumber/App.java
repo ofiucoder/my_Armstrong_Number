@@ -1,17 +1,13 @@
 package dev.ofiucoder.myarmstrongnumber;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import dev.ofiucoder.myarmstrongnumber.views.View;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public final class App {
+
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        View view = new View();
+        int numb = view.index(); 
+        
+        
     }
 }
